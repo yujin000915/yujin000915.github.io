@@ -90,12 +90,8 @@ a:hover {
         
                             .skil-big-caption {
                                 color: #000;
-                                font-size: 25px;
+                                font-size: 30px;
                                 font-weight: 500;
-                            }
-        
-                            .skil-small-caption {
-        
                             }
         
                             .link {
@@ -103,8 +99,7 @@ a:hover {
                                 margin-bottom: 180px;
                                 width: 150px;
                                 height: 40px;
-                                font-size: 18px;
-                                font-weight: 500;
+                                font-size: 20px;
                                 line-height: 40px;
                                 text-align: center;
                                 background-color: #B993D6;
@@ -205,15 +200,24 @@ a:hover {
                 border-top: 1px solid $pc;
 
                 &-title {
-                    color: #6f6f6f;
-                    font-size: 25px;
+                    color: #4d4d4d;
+                    font-size: 20px;
                     font-weight: 500;
                 }
-
+                
                 &-inform {
                     
                     span {
                         display: block;
+                    }
+                    
+                    .kind {
+                        margin-bottom: 25px;
+                        color: #4d4d4d;
+                    }
+
+                    .language {
+                        color: blue;
                     }
                 }
             }
