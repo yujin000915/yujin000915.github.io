@@ -65,7 +65,7 @@ a:hover {
 
 	.brochure {
 		padding: 0 15px;
-		background-color: $pc;
+		background-color: rgba(215, 221, 232, 0.2);
 		
 		.swiper-container {
 			height: 900px;
@@ -97,7 +97,7 @@ a:hover {
 								color: #000;
 								font-size: 30px;
 								font-weight: 500;
-							}
+							}	
 		
 							.link {
 								margin-top: 30px;
@@ -125,6 +125,7 @@ a:hover {
 							
 							.description {
 								margin-top: 15px;
+								font-weight: 300;
 
 								span {
 									display: block;
@@ -147,7 +148,7 @@ a:hover {
 								align-items: center;
 								text-align: center;
 								font-size: 18px;
-								border: 7px solid #B993D6;
+								border: 2px solid #B993D6;
 								border-radius: 50%;
 							}
 		
@@ -159,6 +160,18 @@ a:hover {
 				}
 			}
 
+			.swiper-pagination {
+				
+				.swiper-pagination-bullet {
+					width: 20px;
+					height: 3px;
+					border-radius: 0%;
+				}
+
+				.swiper-pagination-bullet-active {
+					background-color: #B993D6;
+				}
+			}
 		}
 	}
 
@@ -183,13 +196,13 @@ a:hover {
 		max-width: 1280px;
 		
 		&-inner {
+			position: relative;
 			flex: 0 1 auto;
 			display: flex;
 			flex-direction: column;
 			margin: 20px 15px;
 			width: calc(33.333333% - 30px);
 			border: 1px solid #c1c1c1;
-			border-bottom: 15px solid $pc;
 
 			&-image {
 				flex: 0 0 auto;
@@ -219,11 +232,47 @@ a:hover {
 					}
 
 					.language {
-						color: blue;
 
 						span {
 							display: inline-block;
 						}
+					}
+				}
+			}
+
+			.bottom-line {
+				position: absolute;
+				bottom: 0;
+				left: -1px;
+				right: -1px;
+
+				.line01 {
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					max-width: 100%;
+					height: 15px;
+					background-color: #B993D6;
+					transform: scaleX(0);
+					transform-origin: left;
+					transition: transform 1s;
+					transition-delay: 1s;
+				}
+
+				.line02 {
+					position: absolute;
+					bottom: 1px;
+					left: 0;
+					font-size: 13px;
+					line-height: 1;
+					transform: translate3d(5px, 0, 0);
+				}
+			}
+
+			&.show {
+				.bottom-line {
+					.line01 {
+						transform: scaleX(1);
 					}
 				}
 			}
@@ -240,9 +289,9 @@ a:hover {
 	@media all and (max-width:1024px) {
 
 		.brochure {
-			padding: 70px 15px;
-
+			
 			.swiper-container {	
+				padding: 70px 15px;
 				height: inherit;
 				
 				.swiper-wrapper {
@@ -279,9 +328,9 @@ a:hover {
 	@media all and (max-width:639px) {
 		
 		.brochure {
-			padding: 30px 15px;
 			
 			.swiper-container {
+				padding: 30px 15px;
 				height: inherit;
 				
 				.swiper-wrapper {

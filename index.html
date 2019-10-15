@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 		<link rel="stylesheet" href="./CSS/style.min.css">
 		<title>YuJin portfolio</title>
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,600|Poppins:400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,600|Poppins:100,200,300,400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
 	</head>
 	<body>
 		<div id="container">
@@ -128,10 +128,7 @@
 						</div>
 					</div>
 
-					<div class="swiper-pagination">
-						<div class="prev"><i></i></div>
-						<div class="next"><i></i></div>
-					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 
@@ -150,6 +147,10 @@
 							<div class="percent">- 기존에 있던 브로슈어에 랜딩 페이지 제작, 페이지 추가</div>
 						</div>
 					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
 				</a>
 
 				<a href="http://estate.tebah.media" target="_blank" class="content-inner list-02 wow fadeInUp">
@@ -162,6 +163,10 @@
 							<div class="percent">- 브로슈어 Version 1 기반으로 부동산 영업용 샘플 개발</div>
 						</div>
 					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
 				</a>
 
 				<a href="https://cbmc.movie.tebah.media/" target="_blank" class="content-inner list-03 wow fadeInUp">
@@ -171,8 +176,12 @@
 						<div class="caption-inform">
 							<div class="kind">디지털 영상 브로슈어</div>
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>Vue.js</span></div>
-							<div class="percent">- 참여도 100%</div>
+							<div class="percent">- 전화를 받으면 영상이 틀어지는 것같은 교회 홍보 영상 브로슈어</div>
 						</div>
+					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
 					</div>
 				</a>
 
@@ -183,8 +192,12 @@
 						<div class="caption-inform">
 							<div class="kind">일반 홈페이지</div>
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>PHP</span></div>
-							<div class="percent">- 테마 구매 / 일부 페이지 마크업</div>
+							<div class="percent">- 기존의 템플릿을 기반으로 하나의 페이지 리뉴얼</div>
 						</div>
+					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
 					</div>
 				</a>
 
@@ -198,6 +211,10 @@
 							<div class="percent">- 테마 자체 개발/ 일부 페이지 마크업</div>
 						</div>
 					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
 				</a>
 
 				<a href="http://cbmc.tebah.media/" target="_blank" class="content-inner list-06 wow fadeInUp">
@@ -209,6 +226,10 @@
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span></div>
 							<div class="percent">- 참여도 80%</div>
 						</div>
+					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
 					</div>
 				</a>
 
@@ -222,6 +243,10 @@
 							<div class="percent">- 참여도 100%</div>
 						</div>
 					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
 				</a>
 
 				<a href="http://universe-a.co.kr" target="_blank" class="content-inner list-08 wow fadeInUp">
@@ -233,6 +258,10 @@
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>PHP</span></div>
 							<div class="percent">- 테마 자체 개발 / 일부 페이지 마크업</div>
 						</div>
+					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
 					</div>
 				</a>
 
@@ -246,6 +275,10 @@
 							<div class="percent">- 테마 구매 / 일부 페이지 마크업</div>
 						</div>
 					</div>
+					<div class="bottom-line" data-progress="10">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
 				</a>
 			</div>
 		</div>
@@ -256,40 +289,65 @@
 		<script src="./vendor/wow.min.js"></script>
 
 		<script>
+			function videoEndedEvent(video) {
+				video.addEventListener('ended', function() {
+					mySwiper.slideNext(1500);
+				});
+			}
+			
 			var mySwiper = new Swiper ('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+				},
 				loop: true,
 				on: {
 					init: function() {
 						var active = this.slides[this.activeIndex];
 						var video  = active.querySelector('video');
-
+						
 						if ( window.outerWidth >= 1024 ) {
+							videoEndedEvent(video);
 							video.play();
 						} else {
 							video.pause();
 						}
 					},
 					slideChange: function() {
-						var active   = this.slides[this.activeIndex];
-						var previous = this.slides[this.previousIndex];
+						var active   = this.slides[this.activeIndex],
+							previous = this.slides[this.previousIndex],
+							video    = active.querySelector('video'),
+							pVideo   = previous.querySelector('video');
 						
 						
 						if ( window.outerWidth >= 1024 ) {
-							active.querySelector('video').play();
-							previous.querySelector('video').pause();
+							video.play();
+							pVideo.pause();
+							videoEndedEvent(video);
 						} else {
-							active.querySelector('video').pause();
-							previous.querySelector('video').pause();
+							video.pause();
+							pVideo.pause();
 						}
 					}
 				}
 			});
 
+			/**
+			 * Animation Script
+			 * wow.js - https://wowjs.uk/docs.html
+			 */
 			var wow = new WOW({
-				offset: 300
+				offset: 300,
+				callback: function(box) {
+					box.classList.add('show');
+				}
 			});
 			wow.init();
 
+
+			/**
+			 * Header Script
+			 */
 			var headerGnb = document.querySelector('.header-gnb');
 			var headerGnbA = headerGnb.querySelectorAll('a');
 
@@ -307,6 +365,29 @@
 						scrollTop: sectionOffset,
 					}, 1000);
 				});
+			}
+
+
+			/**
+			 * Progress Event Script
+			 */
+			function progressEvent(elm) {
+				var progress     = elm.querySelector('.bottom-line'),
+					progressData = progress.getAttribute('data-progress');
+
+				var line01 = progress.querySelector('.line01'),
+					line02 = progress.querySelector('.line02');
+
+				line01.style.width = progressData + '%';
+				line02.style.left  = progressData + '%';
+				line02.innerHTML   = progressData + '%';
+			}
+			
+			var portfolioItem = document.querySelectorAll('#portfolio-section .content-inner');
+
+			for ( var i = 0; i < portfolioItem.length; i++ ) {
+				var elm = portfolioItem[i];
+				progressEvent(elm);
 			}
 		</script>
 
