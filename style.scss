@@ -71,6 +71,9 @@ a:hover {
 
 	&.hide {
 		animation: fadeOut 0.5s linear 1 forwards;
+		user-select: none;
+		touch-action: none;
+		pointer-events: none;
 	}
 
 	@keyframes fadeOut {
