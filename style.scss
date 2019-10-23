@@ -19,6 +19,66 @@ a:hover {
 	color: black;
 }
 
+#page-loader {
+	position: fixed;
+	display: flex;
+	z-index: 999999999;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.9);
+
+	.logo-box{
+		text-align: center;
+		
+		svg {
+			width: 100px;
+			height: 40px;
+			fill: #fff;
+
+			.cls-2 {
+				fill: #B993D6;
+			}
+		}
+
+		.loading-bar {
+			position: relative;
+			margin-top: 20px;
+			width: 350px;
+			height: 20px;
+			border: 2px solid #fff;
+			border-radius: 30px;
+			overflow: hidden;
+			
+			&-inner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #fff;
+				transform: scaleX(0);
+				transform-origin: left;
+				transition: transform 2s ease;
+				
+				&.show {
+					transform: scaleX(1);
+				}
+			}
+		}
+	}
+
+	&.hide {
+		animation: fadeOut 0.5s linear 1 forwards;
+	}
+
+	@keyframes fadeOut {
+		0% { opacity: 1; }
+		100% { opacity: 0; }
+	}
+}
+
 #container {
 	position: relative;
 
@@ -77,11 +137,33 @@ a:hover {
 					align-items: center;
 		
 					.video {
+						position: relative;
 						flex: 0 0 auto;
 						width: 350px;
 
 						video {
 							width: 100%;
+						}
+
+						.spinner {
+							position: absolute;
+							z-index: 999;
+							top: calc(50% - 15px);
+							left: calc(50% - 15px);
+							width: 30px;
+							height: 30px;
+							border: 2px solid #B993D6;
+							border-top-color: transparent;
+							border-radius: 50%;
+							animation-name: spin;
+							animation-duration: 800ms;
+							animation-iteration-count: infinite;
+							animation-timing-function: linear;
+						}
+
+						@keyframes spin {
+							from {transform:rotate(0deg);}
+							to {transform:rotate(360deg);}
 						}
 					}
 		
@@ -151,10 +233,6 @@ a:hover {
 								border: 2px solid #B993D6;
 								border-radius: 50%;
 							}
-		
-							span {
-								display: block;
-							}
 						}
 					}
 				}
@@ -216,6 +294,7 @@ a:hover {
 
 			.caption {
 				flex: 1 1 auto;
+				margin-bottom: 20px;
 				padding: 10px;
 				border-top: 1px solid $pc;
 
@@ -226,10 +305,7 @@ a:hover {
 				}
 				
 				&-inform {
-					.kind {
-						margin-bottom: 25px;
-						color: #4d4d4d;
-					}
+					margin-top: 10px;
 
 					.language {
 
@@ -255,7 +331,7 @@ a:hover {
 					background-color: #B993D6;
 					transform: scaleX(0);
 					transform-origin: left;
-					transition: transform 1s;
+					transition: transform 2s;
 					transition-delay: 1s;
 				}
 

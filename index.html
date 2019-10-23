@@ -11,7 +11,19 @@
 		<title>YuJin portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,600|Poppins:100,200,300,400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
 	</head>
+
 	<body>
+		<div id="page-loader">
+			<div class="logo-box">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75.24 28.48">
+					<g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1" d="M.67,28.26a.38.38,0,0,1-.32-.48L.44,26.7c0-.25.13-.32.38-.22A3.28,3.28,0,0,0,2,26.67a3.61,3.61,0,0,0,1.21-.2,2,2,0,0,0,.84-.56,6.49,6.49,0,0,0,.78-1.45c.28-.68.56-1.45.84-2.32L2.85,14.51,0,6.88a.39.39,0,0,1,0-.3.25.25,0,0,1,.26-.14H1.77a.66.66,0,0,1,.64.44L6.68,19.17C7.46,17,8.21,15,8.91,13l2.24-6.13a.61.61,0,0,1,.63-.44h1.36a.25.25,0,0,1,.26.14.39.39,0,0,1,0,.3L6.81,24.55A10.53,10.53,0,0,1,6,26.2a5.74,5.74,0,0,1-.87,1.17,3.88,3.88,0,0,1-1.26.81,4,4,0,0,1-1.46.27,7.53,7.53,0,0,1-.86,0A6.56,6.56,0,0,1,.67,28.26Z"/><path class="cls-1" d="M32.81,23.13a.39.39,0,0,1-.45.44H31.22a.39.39,0,0,1-.44-.44V20.5a5.78,5.78,0,0,1-2.2,2.74,6.56,6.56,0,0,1-3.47.84q-5.92,0-5.92-6.62V6.88a.39.39,0,0,1,.44-.44H20.9a.39.39,0,0,1,.44.44v10c0,3.59,1.38,5.38,4.12,5.38a4.46,4.46,0,0,0,2.17-.52,4.85,4.85,0,0,0,1.63-1.43,6.61,6.61,0,0,0,1-2.1,8.16,8.16,0,0,0,.32-2.54V6.88A.39.39,0,0,1,31,6.44H32.3a.39.39,0,0,1,.44.44V19.61c0,.7,0,1.32,0,1.87S32.79,22.58,32.81,23.13Z"/><path class="cls-1" d="M38.54,28.38c-.3,0-.44-.22-.44-.6V26.9c0-.26.14-.35.44-.29a2.06,2.06,0,0,0,.36.05h.43a2.68,2.68,0,0,0,1.27-.27,2.09,2.09,0,0,0,.79-.71,5.45,5.45,0,0,0,.35-2.28V6.88a.39.39,0,0,1,.44-.44h1.27a.39.39,0,0,1,.44.44V23.63q0,4.85-4,4.85l-.74,0A5.47,5.47,0,0,1,38.54,28.38Z"/><path class="cls-1" d="M53.45,23.57H52.06a.39.39,0,0,1-.44-.44V6.88a.39.39,0,0,1,.44-.44h1.39a.39.39,0,0,1,.45.44V23.13A.39.39,0,0,1,53.45,23.57Z"/><path class="cls-1" d="M75.24,23.13a.39.39,0,0,1-.44.44H73.53a.39.39,0,0,1-.44-.44v-10A6.35,6.35,0,0,0,72,9,3.67,3.67,0,0,0,69.1,7.8a5.11,5.11,0,0,0-3.91,1.42,5.57,5.57,0,0,0-1.35,4v9.92a.39.39,0,0,1-.44.44H62.13a.39.39,0,0,1-.44-.44V10.46c0-.91,0-1.62,0-2.12s0-1-.08-1.46a.33.33,0,0,1,.11-.33A.51.51,0,0,1,62,6.44h1.14a.39.39,0,0,1,.44.44V8.62a5.55,5.55,0,0,1,2.14-2A7.71,7.71,0,0,1,69.19,6a5.69,5.69,0,0,1,4.53,1.75,7.22,7.22,0,0,1,1.52,4.9Z"/><circle class="cls-2" cx="42.74" cy="1.5" r="1.5"/><circle class="cls-2" cx="52.76" cy="1.5" r="1.5"/></g></g>
+				</svg>
+				<div class="loading-bar">
+					<div class="loading-bar-inner"></div>
+				</div>
+			</div>
+		</div>
+
 		<div id="container">
 			<div class="header">
 				<div class="header-gnb">
@@ -29,6 +41,7 @@
 									<source src="video/video01-m1.mp4" type="video/mp4">
 									브라우저가 비디오 태그를 지원하지 않습니다.
 								</video>
+								<div class="spinner"></div>
 							</div>
 							<div class="skil-inform">
 								<div class="skil-title">
@@ -42,7 +55,12 @@
 									</div>
 								</div>
 								<div class="skil-circle">
-									<div class="circle-shape"><span>참여도</span><span>100%</span></div>
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="100">0</span>%
+										</div>
+									</div>
 									<div class="circle-shape"><span>HTML5 / SASS</span></div>
 									<div class="circle-shape"><span>Vue.js</span></div>
 								</div>
@@ -55,6 +73,7 @@
 									<source src="video/video02-m1.mp4" type="video/mp4">
 									브라우저가 비디오 태그를 지원하지 않습니다.
 								</video>
+								<div class="spinner"></div>
 							</div>
 							<div class="skil-inform">
 								<div class="skil-title">
@@ -68,7 +87,12 @@
 									</div>
 								</div>
 								<div class="skil-circle">
-									<div class="circle-shape"><span>참여도</span><span>80%</span></div>
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="80">0</span>%
+										</div>
+									</div>
 									<div class="circle-shape"><span>HTML5 / SASS</span></div>
 									<div class="circle-shape"><span>Vue.js</span></div>
 								</div>
@@ -81,6 +105,7 @@
 									<source src="video/video03-m1.mp4" type="video/mp4">
 									브라우저가 비디오 태그를 지원하지 않습니다.
 								</video>
+								<div class="spinner"></div>
 							</div>
 							<div class="skil-inform">
 								<div class="skil-title">
@@ -94,7 +119,12 @@
 									</div>
 								</div>
 								<div class="skil-circle">
-									<div class="circle-shape"><span>참여도</span><span>60%</span></div>
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="60">0</span>%
+										</div>
+									</div>
 									<div class="circle-shape"><span>HTML5 / SASS</span></div>
 									<div class="circle-shape"><span>JavaScript</span></div>
 								</div>
@@ -107,6 +137,7 @@
 									<source src="video/video04-m1.mp4" type="video/mp4">
 									브라우저가 비디오 태그를 지원하지 않습니다.
 								</video>
+								<div class="spinner"></div>
 							</div>
 							<div class="skil-inform">
 								<div class="skil-title">
@@ -120,7 +151,12 @@
 									</div>
 								</div>
 								<div class="skil-circle">
-									<div class="circle-shape"><span>참여도</span><span>80%</span></div>
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="80">0</span>%
+										</div>
+									</div>
 									<div class="circle-shape"><span>HTML5 / SASS</span></div>
 									<div class="circle-shape"><span>JavaScript</span></div>
 								</div>
@@ -147,7 +183,7 @@
 							<div class="percent">- 기존에 있던 브로슈어에 랜딩 페이지 제작, 페이지 추가</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="80">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -163,7 +199,7 @@
 							<div class="percent">- 브로슈어 Version 1 기반으로 부동산 영업용 샘플 개발</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="90">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -176,10 +212,10 @@
 						<div class="caption-inform">
 							<div class="kind">디지털 영상 브로슈어</div>
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>Vue.js</span></div>
-							<div class="percent">- 전화를 받으면 영상이 틀어지는 것같은 교회 홍보 영상 브로슈어</div>
+							<div class="percent">- 전화를 받으면 영상이 틀어지는 효과를 준 교회 홍보 영상 브로슈어</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="90">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -195,13 +231,13 @@
 							<div class="percent">- 기존의 템플릿을 기반으로 하나의 페이지 리뉴얼</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="70">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
 				</a>
 
-				<a href="http://www.moounga.co.kr" target="_blank" class="content-inner list-05 wow fadeInUp">
+				<a href="http://moounga1.cafe24.com" target="_blank" class="content-inner list-05 wow fadeInUp">
 					<div class="content-inner-image" style="background-image:url('./images/logo/moounga.png');"></div>
 					<div class="caption">
 						<div class="caption-title">무언가</div>
@@ -211,7 +247,7 @@
 							<div class="percent">- 테마 자체 개발/ 일부 페이지 마크업</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="50">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -224,10 +260,10 @@
 						<div class="caption-inform">
 							<div class="kind">디지털 브로슈어</div>
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span></div>
-							<div class="percent">- 참여도 80%</div>
+							<div class="percent">- 기존 브로슈어를 기반으로 일부분 수정</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="40">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -240,10 +276,10 @@
 						<div class="caption-inform">
 							<div class="kind">디지털 브로슈어</div>
 							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>Vue.js</span></div>
-							<div class="percent">- 참여도 100%</div>
+							<div class="percent">- 회사소개 디지털 브로슈어</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="90">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -259,7 +295,7 @@
 							<div class="percent">- 테마 자체 개발 / 일부 페이지 마크업</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="60">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -275,7 +311,7 @@
 							<div class="percent">- 테마 구매 / 일부 페이지 마크업</div>
 						</div>
 					</div>
-					<div class="bottom-line" data-progress="10">
+					<div class="bottom-line" data-progress="90">
 						<div class="line01"></div>
 						<div class="line02"></div>
 					</div>
@@ -289,9 +325,35 @@
 		<script src="./vendor/wow.min.js"></script>
 
 		<script>
+			function animateValue(id, start, end, duration) {
+				console.log();
+				
+				var range = end - start;
+				var current = start;
+				var increment = end > start? 1 : -1;
+				var stepTime = Math.abs(Math.floor(duration / range));
+				// var obj = document.querySelector(id);
+				var timer = setInterval(function() {
+					current += increment;
+					id.innerHTML = current;
+					if (current == end) {
+						clearInterval(timer);
+					}
+				}, stepTime);
+			}
+
 			function videoEndedEvent(video) {
 				video.addEventListener('ended', function() {
 					mySwiper.slideNext(1500);
+				});
+			}
+
+			function videoSpinner(activeSlide) {
+				var video   = activeSlide.querySelector('video');
+				var spinner = activeSlide.querySelector('.spinner');
+
+				video.addEventListener("play", function() {
+					spinner.style.display = 'none';
 				});
 			}
 			
@@ -303,31 +365,39 @@
 				loop: true,
 				on: {
 					init: function() {
-						var active = this.slides[this.activeIndex];
-						var video  = active.querySelector('video');
+						var active  = this.slides[this.activeIndex];
+						var video   = active.querySelector('video');
+						var count   = active.querySelector('[data-count]');
 						
 						if ( window.outerWidth >= 1024 ) {
-							videoEndedEvent(video);
 							video.play();
+							videoEndedEvent(video);
+							videoSpinner(active);
 						} else {
 							video.pause();
 						}
+
+						animateValue(count, 10, count.getAttribute('data-count'), 2000);
 					},
 					slideChange: function() {
 						var active   = this.slides[this.activeIndex],
 							previous = this.slides[this.previousIndex],
 							video    = active.querySelector('video'),
-							pVideo   = previous.querySelector('video');
-						
-						
+							pVideo   = previous.querySelector('video'),
+							spinner  = active.querySelector('.spinner'),
+							count    = active.querySelector('[data-count]');
+
 						if ( window.outerWidth >= 1024 ) {
 							video.play();
 							pVideo.pause();
 							videoEndedEvent(video);
+							videoSpinner(active);
 						} else {
 							video.pause();
 							pVideo.pause();
 						}
+
+						animateValue(count, 10, count.getAttribute('data-count'), 2000);
 					}
 				}
 			});
@@ -389,6 +459,24 @@
 				var elm = portfolioItem[i];
 				progressEvent(elm);
 			}
+
+			/**
+			 * Page Loader
+			 */
+
+			function pageLoader() {
+				var pageLoader = document.querySelector('#page-loader');
+				var loadingBar = pageLoader.querySelector('.loading-bar-inner');
+				var timeOut;
+
+				loadingBar.classList.add('show');
+
+				var timeOut = setTimeout(function() {
+					pageLoader.classList.add('hide');
+					clearTimeout(timeOut);
+				}, 2000);
+			}
+			pageLoader();
 		</script>
 
 	</body>
