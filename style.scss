@@ -59,7 +59,7 @@ a:hover {
 			position: relative;
 			margin-top: 20px;
 			width: 400px;
-			height: 15px;
+			height: 10px;
 			border: 1px solid #fff;
 			border-radius: 30px;
 			overflow: hidden;
@@ -92,6 +92,36 @@ a:hover {
 	@keyframes fadeOut {
 		0% { opacity: 1; }
 		100% { opacity: 0; }
+	}
+
+	@media all and (max-width:639px) {
+			
+		.logo-box{
+			
+			svg {
+				width: 250px;
+			}
+
+			.loading-bar {
+				width: 320px;
+				height: 10px;
+			}
+		}
+	}
+
+	@media all and (max-width:480px) {
+			
+		.logo-box{
+
+			svg {
+				width: 230px;
+			}
+
+			.loading-bar {
+				width: 250px;
+				height: 10px;
+			}
+		}
 	}
 }
 
@@ -418,9 +448,8 @@ a:hover {
 	}
 
 	@media all and (max-width:639px) {
-		
+	
 		.brochure {
-			
 			.swiper-container {
 				padding: 30px 15px;
 				height: inherit;
@@ -430,6 +459,10 @@ a:hover {
 						.skil-inform {
 							display: block;
 							margin: 0 auto;
+
+							.skil-title {
+								margin: 0 15px;
+							}
 
 							.skil-circle {
 								margin-top: 50px;
