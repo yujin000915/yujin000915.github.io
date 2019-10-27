@@ -41,7 +41,7 @@ a:hover {
 				fill:none;
 				stroke:#b090c1;
 				stroke-miterlimit:10;
-				animation-duration: 0.5s;
+				animation-duration: 0.3s;
 				animation-fill-mode: both;
 				animation-timing-function: linear;
 				animation-iteration-count: infinite;
@@ -73,7 +73,7 @@ a:hover {
 				background-color: #fff;
 				transform: scaleX(0);
 				transform-origin: left;
-				transition: transform 3s ease;
+				transition: transform 5s ease;
 				
 				&.show {
 					transform: scaleX(1);
@@ -343,12 +343,6 @@ a:hover {
 				margin-bottom: 20px;
 				padding: 10px;
 				border-top: 1px solid $pc;
-
-				&-title {
-					color: #4d4d4d;
-					font-size: 20px;
-					font-weight: 500;
-				}
 				
 				&-inform {
 					margin-top: 10px;
