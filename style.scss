@@ -393,6 +393,29 @@ a:hover {
 				}
 			}
 		}
+
+		.list-10 {
+			.content-inner-image {
+				overflow: hidden;
+
+				svg {
+					margin-top: 20%;
+					margin-left: 18%;
+					width: 300px;
+					height: 40px;
+					animation-name: moves;
+					animation-duration: 5s;
+					animation-timing-function: linear;
+					animation-iteration-count: infinite;
+					transform-origin: 50% 50%;
+				}
+				
+				@keyframes moves {
+					0%  { transform: translate(-250px, 0); }
+					100% { transform: translate(250px, 0); }
+				}
+			}
+		}
 	}
 
 	@media all and (max-width:1550px) {
