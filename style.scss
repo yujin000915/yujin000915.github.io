@@ -418,6 +418,8 @@ a:hover {
 		}
 
 		.list-11 {
+			position: relative;
+
 			.content-inner-image {
 				overflow: hidden;
 
@@ -449,6 +451,37 @@ a:hover {
 					60%  { transform: translate(100px, 50px); }
 					80%  { transform: translate(0, 0); }
 					100% { transform: translate(0, 0); }
+				}
+			}
+		}
+
+		.list-12 {
+			.content-inner-image {
+				padding-top: 5%;
+				padding-left: 5%;
+
+				svg {
+					fill: #fff;
+					width: 300px;
+					height: 150px;
+					
+					.cls-1 {
+						stroke: #000;
+						stroke-width: 5px;
+						stroke-linejoin: round;
+						stroke-linecap: round;
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						animation-name: diamondStroke;
+						animation-timing-function: ease-in;
+						animation-duration: 5s;
+						animation-iteration-count: infinite;
+					}
+					
+					@keyframes diamondStroke {
+						0%   { stroke-dashoffset: 1000; }
+						100% { stroke-dashoffset: 0; }
+					}
 				}
 			}
 		}
