@@ -530,6 +530,12 @@ a:hover {
 		.header {
 			display: none;
 		}
+
+		.content {
+			.list-13 {
+				display: none;
+			}
+		}
 	}
 
 	@media all and (max-width:1024px) {
