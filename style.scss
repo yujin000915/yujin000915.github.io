@@ -396,12 +396,13 @@ a:hover {
 
 		.list-10 {
 			.content-inner-image {
+				text-align: center;
+				justify-content: center;
 				overflow: hidden;
 
 				svg {
 					margin-top: 20%;
-					margin-left: 18%;
-					width: 300px;
+					width: 350px;
 					height: 40px;
 					animation-name: moves;
 					animation-duration: 5s;
@@ -421,6 +422,8 @@ a:hover {
 			position: relative;
 
 			.content-inner-image {
+				text-align: center;
+				justify-content: center;
 				overflow: hidden;
 
 				svg {
@@ -458,7 +461,8 @@ a:hover {
 		.list-12 {
 			.content-inner-image {
 				padding-top: 5%;
-				padding-left: 5%;
+				text-align: center;
+				justify-content: center;
 
 				svg {
 					fill: #fff;
@@ -466,19 +470,51 @@ a:hover {
 					height: 150px;
 					
 					.cls-1 {
-						stroke: #000;
-						stroke-width: 3px;
+						stroke: rgb(255, 0, 0);
+						stroke-width: 2px;
 						stroke-linejoin: round;
 						stroke-linecap: round;
 						stroke-dasharray: 1000;
 						stroke-dashoffset: 1000;
 						animation-name: diamondStroke;
 						animation-timing-function: ease-in;
-						animation-duration: 3.5s;
+						animation-duration: 4s;
 						animation-iteration-count: infinite;
 					}
 					
 					@keyframes diamondStroke {
+						0%   { stroke-dashoffset: 1000; }
+						100% { stroke-dashoffset: 0; }
+					}
+				}
+			}
+		}
+
+		.list-13 {
+			.content-inner-image {
+				padding-top: 5%;
+				text-align: center;
+				justify-content: center;
+
+				svg {
+					fill: #fff;
+					width: 200px;
+					height: 150px;
+					
+					.cls-1 {
+						stroke: #000;
+						stroke-width: 0.5px;
+						stroke-linejoin: round;
+						stroke-linecap: butt;
+						stroke-dasharray: 1000;
+						stroke-dashoffset: 1000;
+						animation-name: parallax;
+						animation-timing-function: ease-in;
+						animation-duration: 3.5s;
+						animation-iteration-count: infinite;
+					}
+					
+					@keyframes parallax {
 						0%   { stroke-dashoffset: 1000; }
 						100% { stroke-dashoffset: 0; }
 					}
