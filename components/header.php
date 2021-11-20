@@ -11,7 +11,7 @@
 	<meta name="Resource-type" content="Document">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
      
-	<title>YUJIN'S PORTFOLIO</title>
+	<title>신규 YUJIN'S PORTFOLIO</title>
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
