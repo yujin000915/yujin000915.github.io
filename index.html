@@ -1,7 +1,7 @@
 <!-- 210601_
-	Memo = 
+	Memo =
 
-	input background url :  
+	input background url :
 	<div style="background-image:url('./assets/images/main-bg01.jpg');">
 
 	wow.js :
@@ -9,7 +9,7 @@
 	<div class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="3s">
 -->
 <!-- 210601_
-	Outputs = 
+	Outputs =
 
 	1. http://spoalmanac.com  			어썸코드, 스포알마냑
 	2. ./beston.php 					로컬, 베스트온
@@ -19,21 +19,53 @@
 	6. ./farmeya.php  					로컬, 파미아
  -->
 
-<?php require_once "./components/header.php"; ?>
+<!DOCTYPE html>
+
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Author" content="">
+		<meta name="Description" content="">
+		<meta name="author" content="Alvaro Trigo Lopez">
+		<meta name="description" content="yujin's portfolio">
+		<meta name="keywords" content="HTML5,SASS(SCSS),CSS3,JavaScript,jQuery">
+		<meta name="Resource-type" content="Document">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<title>신규 YUJIN'S PORTFOLIO</title>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
+
+		<!-- css -->
+		<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+		<link rel="stylesheet" href="./assets/scss/css/reset.min.css">
+		<link rel="stylesheet" href="./assets/scss/css/animate.css">
+		<link rel="stylesheet" href="./assets/scss/css/style.min.css?<?=mktime()?>">
+		<link rel="stylesheet" type="text/css" href="../assets/scss/css/examples.css?<?=mktime()?>">
+
+		<!-- script -->
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="../assets/js/wow.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="https://unpkg.com/scroll-out@2.2.2/dist/scroll-out.min.js"></script>
+	</head>
+
 	<body>
 		<div class="content_wrap">
 			<!-- 자기소개 -->
 			<section class="intro_section">
-				<div 
-					class="intro_section_img wow bounceInUp" 
-					data-wow-duration="2s" 
-					data-wow-delay="0.2s" 
+				<div
+					class="intro_section_img wow bounceInUp"
+					data-wow-duration="2s"
+					data-wow-delay="0.2s"
 					style="background-image:url('./assets/images/profile.jpg');"
 				></div>
-				<div 
+				<div
 					class="intro_section_info wow bounceInUp"
-					data-wow-duration="2s" 
-					data-wow-delay="1s" 
+					data-wow-duration="2s"
+					data-wow-delay="1s"
 				>
 					<div class="typewritter">
 						<h2>YUJIN'S PORTFOLIO.</h2><br />
@@ -44,7 +76,7 @@
 					<span>
 						배움에 주저하지 않는,<br />
 						지치지않는 에너자이저
-					</span> 
+					</span>
 					퍼블리셔 박유진입니다.
 				</div>
 			</section>
@@ -55,8 +87,8 @@
 					<img src="./assets/images/avenger.jpg" alt="자바스크립트 연습" />
 				</figure>
 				<article class="content_section_info">
-					<a href="./reduce_script.php" target="_blank" >VIEW MORE</a>
-					<a href="./script_practice.php" target="_blank" >VIEW MORE</a>
+					<a href="./reduce_script.html" target="_blank" >VIEW MORE</a>
+					<a href="./script_practice.html" target="_blank" >VIEW MORE</a>
 					<p class="page_name">JavaScript 연습</p>
 					<h3 class="responsive">Practice</h3>
 				</article>
@@ -87,7 +119,7 @@
 					<img src="./assets/images/beston.png" alt="베스트온 홈페이지" />
 				</figure>
 				<article class="content_section_info">
-					<a href="./beston.php" target="_blank" >VIEW MORE</a>
+					<a href="./beston.html" target="_blank" >VIEW MORE</a>
 					<p class="page_name">BESTON (베스트온)</p>
 					<h3 class="responsive">RESPONSIVE WEBSITE</h3>
 					<h4 class="desc">
@@ -163,7 +195,7 @@
 					<img src="./assets/images/farmeya.png" alt="파미아 홈페이지" />
 				</figure>
 				<article class="content_section_info text_right">
-					<a href="./farmeya.php" target="_blank" >VIEW MORE</a>
+					<a href="./farmeya.html" target="_blank" >VIEW MORE</a>
 					<p class="page_name">BESTON (파미아)</p>
 					<h3 class="responsive">RESPONSIVE WEBSITE</h3>
 					<h4 class="desc">
