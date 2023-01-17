@@ -8,15 +8,14 @@
 	<div class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="2s">
 	<div class="wow bounceInUp" data-wow-duration="1s" data-wow-delay="3s">
 -->
-<!-- 210601_
-	Outputs =
 
-	1. http://spoalmanac.com  			어썸코드, 스포알마냑
-	2. ./beston.php 					로컬, 베스트온
-	3. http://moounga.co.kr  			몽키랩, 무언가
-	4. http://www.uffia.co.kr 			몽키랩, 우피아
-	5. http://www.mtreeworld.co.kr  	비즈윌, 엠트리월드
-	6. ./farmeya.php  					로컬, 파미아
+<!-- 
+    Outputs
+
+    1. //www.siwonschool.com  		시원스쿨: 기초영어
+	2. //lab.siwonschool.com 		시원스쿨: 시험영어
+	3. //spoalmanac.com  			어썸코드: 스포츠알마냑
+	4. //www.uffia.co.kr 			몽키랩:   우피아
  -->
 
 <!DOCTYPE html>
@@ -29,17 +28,17 @@
 		<meta name="Description" content="">
 		<meta name="author" content="Alvaro Trigo Lopez">
 		<meta name="description" content="yujin's portfolio">
-		<meta name="keywords" content="HTML5,SASS(SCSS),CSS3,JavaScript,jQuery">
+		<meta name="keywords" content="HTML5,SCSS,CSS3,JavaScript,jQuery">
 		<meta name="Resource-type" content="Document">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-		<title>신규 YUJIN'S PORTFOLIO</title>
+		<title>Yujin's Portfolio</title>
 
 		<!-- fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
+		<link href="//fonts.googleapis.com/css?family=Nanum+Gothic:400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
 
 		<!-- css -->
-		<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+		<!-- <link rel="stylesheet" href="//unpkg.com/swiper/swiper-bundle.min.css"> -->
 		<link rel="stylesheet" href="./assets/scss/css/reset.min.css">
 		<link rel="stylesheet" href="./assets/scss/css/animate.css">
 		<link rel="stylesheet" href="./assets/scss/css/style.min.css?<?=mktime()?>">
@@ -47,9 +46,9 @@
 
 		<!-- script -->
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="//unpkg.com/scroll-out@2.2.2/dist/scroll-out.min.js"></script>
 		<script src="../assets/js/wow.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="https://unpkg.com/scroll-out@2.2.2/dist/scroll-out.min.js"></script>
 	</head>
 
 	<body>
@@ -68,85 +67,60 @@
 					data-wow-delay="1s"
 				>
 					<div class="typewritter">
-						<h2>YUJIN'S PORTFOLIO.</h2><br />
+						<h2>YUJIN'S PORTFOLIO.</h2>
 					</div>
-					<br />
-					반갑워요!<br />
-					<br />
-					<span>
-						배움에 주저하지 않는,<br />
-						지치지않는 에너자이저
-					</span>
-					퍼블리셔 박유진입니다.
+					<br><br>
+					<span>배움에 주저하지 않는</span> 박유진입니다.
 				</div>
 			</section>
 
-			<!-- script 연습 -->
+            <!-- 기초영어 -->
 			<section class="content_section" data-scroll>
 				<figure class="content_section_bg">
-					<img src="./assets/images/avenger.jpg" alt="자바스크립트 연습" />
+					<img src="./assets/images/www_siwon.png" alt="기초영어">
 				</figure>
+
 				<article class="content_section_info">
-					<a href="./reduce_script.html" target="_blank" >VIEW MORE</a>
-					<a href="./script_practice.html" target="_blank" >VIEW MORE</a>
-					<p class="page_name">JavaScript 연습</p>
-					<h3 class="responsive">Practice</h3>
+					<a href="//www.siwonschool.com" target="_blank" >VIEW MORE</a>
+					<p class="page_name">Siwonschool 기초영어</p>
+					<h4 class="desc">
+                        <span>HTML5, SCSS, CSS3, javaScript, jQuery</span> 
+                        <br><br>
+                        <br>기초영어 메인 사이트
+					</h4>
+				</article>
+			</section>
+
+			<!-- 시험영어 -->
+			<section class="content_section" data-scroll>
+				<figure class="content_section_bg">
+					<img src="./assets/images/lab_siwon.png" alt="시험영어">
+				</figure>
+
+				<article class="content_section_info text_right">
+					<a href="//lab.siwonschool.com" target="_blank" >VIEW MORE</a>
+					<p class="page_name">Siwonschool 시험영어</p>
+					<h4 class="desc">
+                        <span>HTML5, SCSS, CSS3, javaScript, jQuery</span>
+                        <br><br>
+                        <br>토익 시험영어 사이트 
+					</h4>
 				</article>
 			</section>
 
 			<!-- 스포알마냑 -->
 			<section class="content_section" data-scroll>
 				<figure class="content_section_bg">
-					<img src="./assets/images/spoalmanac.png" alt="스포알마냑 홈페이지" />
+					<img src="./assets/images/spoalmanac.png" alt="스포알마냑">
 				</figure>
-				<article class="content_section_info text_right">
-					<a href="http://spoalmanac.com" target="_blank" >VIEW MORE</a>
+
+				<article class="content_section_info">
+					<a href="//spoalmanac.com" target="_blank" >VIEW MORE</a>
 					<p class="page_name">SPOALMANAC (스포알마냑)</p>
-					<h3 class="responsive">PC WEBSITE</h3>
 					<h4 class="desc">
-						PC 웹, <br />
-						퍼블리싱 기여도 70% <br />
-						<span>Angular, HTML5, SASS(SCSS), CSS3</span> <br />
-						<br />
-						승부예측 게임 사이트
-					</h4>
-				</article>
-			</section>
-
-			<!-- 베스트온 -->
-			<section class="content_section" data-scroll>
-				<figure class="content_section_bg">
-					<img src="./assets/images/beston.png" alt="베스트온 홈페이지" />
-				</figure>
-				<article class="content_section_info">
-					<a href="./beston.html" target="_blank" >VIEW MORE</a>
-					<p class="page_name">BESTON (베스트온)</p>
-					<h3 class="responsive">RESPONSIVE WEBSITE</h3>
-					<h4 class="desc">
-						반응형 웹, <br />
-						퍼블리싱 기여도 100% <br />
-						<span>PHP, SASS(SCSS), CSS3, JavaScript</span> <br />
-						<br />
-						메인 화면 단일페이지. (개인 연습 홈페이지)
-					</h4>
-				</article>
-			</section>
-
-			<!-- 무언가 -->
-			<section class="content_section" data-scroll>
-				<figure class="content_section_bg">
-					<img src="./assets/images/moounga.png" alt="무언가 홈페이지" />
-				</figure>
-				<article class="content_section_info">
-					<a href="http://moounga.co.kr" target="_blank" >VIEW MORE</a>
-					<p class="page_name">ANTLER (무언가)</p>
-					<h3 class="responsive">RESPONSIVE WEBSITE</h3>
-					<h4 class="desc">
-						반응형 웹, <br />
-						퍼블리싱 기여도 30% <br />
-						<span>PHP, SASS(SCSS), CSS3, Javascript</span> <br />
-						<br />
-						회사 소개 사이트
+                        <span>Angular, HTML5, SCSS, CSS3, TypeScript, jQuery</span> 
+                        <br><br>
+                        <br>승부예측 게임 사이트
 					</h4>
 				</article>
 			</section>
@@ -156,61 +130,21 @@
 				<figure class="content_section_bg">
 					<img src="./assets/images/uffia.png" alt="우피아 홈페이지" />
 				</figure>
+
 				<article class="content_section_info text_right">
-					<a href="http://www.uffia.co.kr" target="_blank" >VIEW MORE</a>
+					<a href="//www.uffia.co.kr" target="_blank" >VIEW MORE</a>
 					<p class="page_name">ANTLER (우피아)</p>
-					<h3 class="responsive">RESPONSIVE WEBSITE</h3>
 					<h4 class="desc">
-						반응형 웹, <br />
-						퍼블리싱 기여도 20% <br />
-						<span>PHP, SASS(SCSS), CSS3, Javascript</span> <br />
-						<br />
-						회사 소개 사이트
-					</h4>
-				</article>
-			</section>
-
-			<!-- 엠트리월드 -->
-			<section class="content_section" data-scroll>
-				<figure class="content_section_bg">
-					<img src="./assets/images/mtreeworld.png" alt="엠트리월드 홈페이지" />
-				</figure>
-				<article class="content_section_info">
-					<a href="http://www.mtreeworld.co.kr" target="_blank" >VIEW MORE</a>
-					<p class="page_name">MTREEWORLD (엠트리월드)</p>
-					<h3 class="responsive">PC WEBSITE</h3>
-					<h4 class="desc">
-						PC 웹, <br />
-						퍼블리싱 기여도 100% <br />
-						<span>ASP, CSS3, jQuery</span> <br />
-						<br />
-						쇼핑몰 사이트
-					</h4>
-				</article>
-			</section>
-
-			<!-- 파미아 -->
-			<section class="content_section" data-scroll>
-				<figure class="content_section_bg">
-					<img src="./assets/images/farmeya.png" alt="파미아 홈페이지" />
-				</figure>
-				<article class="content_section_info text_right">
-					<a href="./farmeya.html" target="_blank" >VIEW MORE</a>
-					<p class="page_name">BESTON (파미아)</p>
-					<h3 class="responsive">RESPONSIVE WEBSITE</h3>
-					<h4 class="desc">
-						반응형 웹, <br />
-						퍼블리싱 기여도 100% <br />
-						<span>PHP, SASS(SCSS), CSS3, JavaScript</span> <br />
-						<br />
-						메인 화면 단일페이지. (개인 연습 홈페이지)
+                        <span>HTML5, SCSS, CSS3, javaScript, jQuery</span> 
+                        <br><br>
+                        <br>쇼핑몰 사이트
 					</h4>
 				</article>
 			</section>
 		</div>
 	</body>
 
-	<script type="text/javascript">
+	<script>
 		console.clear();
 
 		ScrollOut({
